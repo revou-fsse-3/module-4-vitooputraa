@@ -7,8 +7,8 @@ body {
 }
 
 * {
-  padding: 0;
-  margin: 0;
+  padding: 10px;
+  margin-right: 5px;
 }
 
 .wrapper {
@@ -22,7 +22,7 @@ body {
   stroke-dashoffset: 166;
   stroke-width: 2;
   stroke-miterlimit: 10;
-  stroke: #4ade80;
+  stroke: red;
   fill: none;
   animation: stroke 0.6s cubic-bezier(0.65, 0, 0.45, 1) forwards;
 }
@@ -36,7 +36,7 @@ body {
   stroke: #fff;
   stroke-miterlimit: 10;
   margin: 10% auto;
-  box-shadow: inset 0px 0px 0px #4ade80;
+  box-shadow: inset 0px 0px 0px red;
   animation: fill 0.4s ease-in-out 0.4s forwards,
     scale 0.3s ease-in-out 0.9s both;
 }
@@ -67,6 +67,6 @@ body {
 
 @keyframes fill {
   100% {
-    box-shadow: inset 0px 0px 0px 30px #4ade80;
+    box-shadow: inset 0px 0px 0px 30px red;
   }
 }

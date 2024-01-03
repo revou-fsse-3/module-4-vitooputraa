@@ -34,7 +34,7 @@ const AccountForm: React.FC<AccountFormProps> = ({ formRef }) => {
   formRef.current = formik;
 
   return (
-    <form onSubmit={formik.handleSubmit}>
+    <form onSubmit={formik.handleSubmit} className="flex flex-col">
       <div className="flex flex-col">
         <div className="mx-2 w-full flex-1">
           <label htmlFor="username" className="mt-3 h-6 text-xs font-bold uppercase leading-8 text-gray-500">
