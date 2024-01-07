@@ -1,0 +1,69 @@
+#root {
+  display: flex;
+  height: 100vh;
+  width: 100%;
+}
+
+a {
+  width: 150px;
+  border: solid 1px bisque;
+  padding: 10px;
+  text-decoration: none;
+  color: white;
+  background-color: red;
+  border-radius: 4px;
+}
+
+.content {
+  display: flex;
+  margin-top: 10vh;
+  flex-grow: 1;
+}
+
+.login-box {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  flex-grow: 1;
+  align-items: center;
+}
+
+.login-form {
+  display: flex;
+  flex-direction: column;
+  gap: 4; 
+  margin-top: 8; 
+}
+
+.login-content {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  gap: 4; 
+}
+
+.category-list {
+  gap: 8; 
+  flex-direction: column;
+  display: flex;
+}
+
+.action-group {
+  display: flex;
+  flex-direction: row;
+  gap: 4; 
+  justify-content: center;
+}
+
+/* Responsive Design */
+@media (min-width: 640px) {
+  .login-form {
+    flex-direction: row;
+  }
+
+  .login-form > * {
+    flex: 1;
+    margin-right: 4;
+  }
+}
